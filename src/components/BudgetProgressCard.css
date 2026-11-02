@@ -1,0 +1,138 @@
+.budget-progress-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.budget-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.budget-item-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.budget-item-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+}
+
+.budget-category-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.budget-color-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.budget-cat-name {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.budget-amount-info {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.budget-spent-val {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.budget-limit-val {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.budget-progress-track {
+  height: 7px;
+  background-color: var(--surface-muted);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.budget-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 400ms ease;
+}
+
+.progress-normal {
+  background-color: var(--accent);
+}
+
+.progress-warning {
+  background-color: var(--warning);
+}
+
+.progress-high-warning {
+  background-color: #EA580C;
+}
+
+.progress-danger {
+  background-color: var(--expense);
+}
+
+.budget-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6875rem;
+}
+
+.budget-pct-text {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.budget-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.tag-success {
+  color: var(--income);
+}
+
+.tag-warning {
+  color: var(--warning);
+}
+
+.tag-high-warning {
+  color: #EA580C;
+}
+
+.tag-danger {
+  color: var(--expense);
+}
+
+.budget-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+

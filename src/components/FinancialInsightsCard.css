@@ -1,0 +1,168 @@
+.insights-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.insights-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.insights-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.insights-badge-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-subtle);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insights-live-pill {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  background: var(--accent-subtle);
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+}
+
+.insights-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.insight-item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  transition: all var(--transition-fast);
+}
+
+.insight-item-row:hover {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+  box-shadow: var(--shadow-xs);
+}
+
+.insight-icon-box {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.insight-success .insight-icon-box {
+  background: var(--income-bg);
+  color: var(--income);
+}
+
+.insight-warning .insight-icon-box {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.insight-danger .insight-icon-box {
+  background: var(--expense-bg);
+  color: var(--expense);
+}
+
+.insight-info .insight-icon-box {
+  background: #EFF6FF;
+  color: #2563EB;
+}
+
+.insight-neutral .insight-icon-box {
+  background: var(--surface-muted);
+  color: var(--primary);
+}
+
+.insight-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.insight-meta-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.insight-headline {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.insight-tag {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.125rem 0.45rem;
+  border-radius: var(--radius-full);
+}
+
+.insight-tag.tag-success {
+  background: var(--income-bg);
+  color: var(--income);
+}
+
+.insight-tag.tag-warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.insight-tag.tag-danger {
+  background: var(--expense-bg);
+  color: var(--expense);
+}
+
+.insight-tag.tag-info {
+  background: #EFF6FF;
+  color: #2563EB;
+}
+
+.insight-tag.tag-neutral {
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+}
+
+.insight-body {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.insights-empty-notice {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+

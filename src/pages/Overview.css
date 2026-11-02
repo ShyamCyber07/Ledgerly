@@ -1,0 +1,73 @@
+.overview-page-root {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.overview-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-sync-btn {
+  background: var(--surface);
+}
+
+.overview-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.overview-charts-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1.1fr;
+  gap: 1.25rem;
+}
+
+.chart-grid-col-large,
+.chart-grid-col-small {
+  min-width: 0;
+}
+
+.overview-tables-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1.1fr;
+  gap: 1.25rem;
+}
+
+.tables-grid-col-left,
+.tables-grid-col-right {
+  min-width: 0;
+}
+
+.overview-insights-section {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .overview-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overview-charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-tables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .overview-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+

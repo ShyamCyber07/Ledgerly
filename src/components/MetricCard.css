@@ -1,0 +1,114 @@
+.metric-card-root {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card-root:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #CBD5E1;
+}
+
+.metric-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.875rem;
+}
+
+.metric-card-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-icon-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-badge-primary {
+  background: rgba(20, 40, 61, 0.08);
+  color: var(--primary);
+}
+
+.metric-badge-income {
+  background: var(--income-bg);
+  color: var(--income);
+}
+
+.metric-badge-expense {
+  background: var(--expense-bg);
+  color: var(--expense);
+}
+
+.metric-badge-budget {
+  background: #EFF6FF;
+  color: #2563EB;
+}
+
+.metric-amount-row {
+  margin-bottom: 0.625rem;
+}
+
+.metric-currency-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.metric-bottom-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+
+.metric-trend-tag {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.trend-positive {
+  background: var(--income-bg);
+  color: var(--income);
+}
+
+.trend-negative {
+  background: var(--expense-bg);
+  color: var(--expense);
+}
+
+.trend-neutral {
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+}
+
+.metric-subtext-label {
+  color: var(--text-muted);
+}
+

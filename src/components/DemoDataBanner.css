@@ -1,0 +1,126 @@
+.demo-banner {
+  background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+  border: 1px solid #A7F3D0;
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(21, 150, 106, 0.06);
+}
+
+.demo-banner-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  flex: 1;
+}
+
+.demo-banner-icon-wrap {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: #DCFCE7;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.demo-sparkle-icon {
+  color: var(--accent);
+}
+
+.demo-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.demo-banner-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.demo-badge {
+  background: var(--accent);
+  color: #FFFFFF;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.demo-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.demo-desc {
+  font-size: 0.8125rem;
+  color: #065F46;
+  line-height: 1.4;
+}
+
+.demo-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.demo-action-btn {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-color: #A7F3D0;
+  background: #FFFFFF;
+  color: #065F46;
+}
+
+.demo-action-btn:hover {
+  background: #F0FDF4;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.demo-clear-btn:hover {
+  border-color: #FCA5A5;
+  color: var(--expense);
+  background: var(--expense-bg);
+}
+
+.demo-close-btn {
+  color: #059669;
+  padding: 0.35rem;
+  border-radius: var(--radius-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-close-btn:hover {
+  background: rgba(21, 150, 106, 0.1);
+}
+
+@media (max-width: 860px) {
+  .demo-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .demo-banner-actions {
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+    border-top: 1px solid #D1FAE5;
+  }
+}
+
